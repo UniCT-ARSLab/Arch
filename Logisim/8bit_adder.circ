@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.7.2" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.7.2(https://github.com/logisim-evolution/).
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -94,6 +94,7 @@
     <comp lib="0" loc="(180,270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
+      <a name="label" val="y7"/>
     </comp>
     <comp lib="0" loc="(210,140)" name="Pin">
       <a name="appearance" val="classic"/>
