@@ -1,65 +1,76 @@
-               ;
-               ;       Compito B del 13/07/2023
-               ;
+                ;
+                ;       Sia dato un vettore v di interi a 32 bit:
+                ;       Generare un nuovo vettore counts il cui i-esimo elemento indica quanti bit
+                ;       a 1 ci sono nell’i-esimo elemento di v (effettuare l’AND con 1 per testare il
+                ;       b0 e poi shiftare a destra il valore, ripetendo queste operazioni per 32 volte);
+                ;
+vett_v          dcd     10,30,0,-50,6
+counts          fill    5*4
 
-array_v        dcd     2345,356,112,35,6,6691,3245
-array_counts   fill    28
-               ;
-               ;       R0 = lunghezza di array_v
-               ;       R1 = ptr ad array_v
-               ;       R2 = i-esimo elemento di array_v
-               ;       R7 = ptr ad array_counts
-               ;
+num_of_elements equ     5
 
-               mov     r0,#7
-               mov     r1,#array_v
-               mov     r7,#array_counts
+                ;       R3 = numero di elementi
+                ;       R4 = ptr i-esimo elemento di vett_v
+                ;       R5 = ptr i-esimo elemento di counts
 
-scan_loop      
-               cmp     r0,#0
-               beq     end_scan_loop
+                mov     r3,#num_of_elements
+                mov     r4,#vett_v
+                mov     r5,#counts
 
-               ldr     r2,[r1],#4
+scan_loop       
+                cmp     r3,#0
+                beq     end_scan_loop
 
-               ;
-               ;       conteggio dei bit a 1 di R2
-               ;
-               ;       R4 = loop counter (32 iterazioni)
-               ;       R5 = risultato del test dell'i-esimo bit
-               ;       R6 = contatore dei bit a 1
+                ldr     r0,[r4],#4
+                ;       R0 = numero da testare
+                ;       R1 = contatore di ciclo di lunghezza 32
+                ;       R2 = contatore di bit 1
+                ;
+                mov     r1,#32
+                mov     r2,#0
 
-               mov     r4,#32
-               mov     r6,#0
+loop            
+                cmp     r1,#0
+                beq     end_loop
 
-shift_loop     
-               cmp     r4,#0
-               beq     end_shift_loop
-               and     r5,r2,#1
-               cmp     r5,#0
-               beq     skip
+                and     r6,r0,#1
+                cmp     r6,#0
+                beq     is_zero
 
-               add     r6,r6,#1
+                add     r2,r2,#1
 
-skip           
+is_zero         
+                lsr     r0,r0,#1
 
-               lsr     r2,r2,#1
-               sub     r4,r4,#1
-               b       shift_loop
-end_shift_loop 
-               ;       R6 numero di bit a 1 di R2
+                sub     r1,r1,#1
+                b       loop
 
-               str     r6,[r7],#4
+end_loop        
+                str     r2,[r5],#4
+                sub     r3,r3,#1
+                b       scan_loop
+end_scan_loop   
 
+                ;       R0 = numero di elementi
+                ;       R1 = ptr i-esimo elemento di counts
+                ;       R2 = i-esimo elemento di counts
+                ;       R3 = massimo temporaneo
+                mov     r0,#num_of_elements
+                mov     r1,#counts
 
-               sub     r0,r0,#1
-               b       scan_loop
+                ldr     r3,[r1],#4
 
-end_scan_loop  
-
-; ...determinare il max di array_counts
-
-
-
+max_loop        
+                cmp     r0,#1
+                beq     end_max_loop
+                ldr     r2,[r1],#4
+                cmp     r2,r3
+                ble     skip
+                mov     r3,r2
+skip            
+                sub     r0,r0,#1
+                b       max_loop
+end_max_loop    
 
 
 
