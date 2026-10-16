@@ -4,7 +4,7 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="south"/>
+      <a name="facing" val="west"/>
     </tool>
     <tool name="Pin">
       <a name="appearance" val="classic"/>
@@ -96,66 +96,66 @@
       <a name="type" val="output"/>
       <a name="width" val="5"/>
     </comp>
-    <comp loc="(550,210)" name="Half_Adder">
-      <a name="label" val="Bit_0"/>
+    <comp loc="(560,170)" name="Half_Adder">
+      <a name="label" val="BIT_0"/>
     </comp>
-    <comp loc="(550,310)" name="Full_Adder">
-      <a name="label" val="Bit_1"/>
+    <comp loc="(560,290)" name="Full_Adder">
+      <a name="label" val="BIT_1"/>
     </comp>
-    <comp loc="(550,430)" name="Full_Adder">
-      <a name="label" val="Bit_2"/>
+    <comp loc="(560,420)" name="Full_Adder">
+      <a name="label" val="BIT_2"/>
     </comp>
-    <comp loc="(550,560)" name="Full_Adder">
-      <a name="label" val="BIt_3"/>
+    <comp loc="(560,550)" name="Full_Adder">
+      <a name="label" val="BIT_3"/>
     </comp>
     <wire from="(160,130)" to="(240,130)"/>
     <wire from="(160,200)" to="(190,200)"/>
-    <wire from="(200,220)" to="(200,600)"/>
-    <wire from="(200,600)" to="(330,600)"/>
-    <wire from="(210,220)" to="(210,470)"/>
-    <wire from="(210,470)" to="(330,470)"/>
-    <wire from="(220,220)" to="(220,350)"/>
-    <wire from="(220,350)" to="(330,350)"/>
-    <wire from="(230,220)" to="(230,230)"/>
-    <wire from="(230,230)" to="(330,230)"/>
-    <wire from="(250,150)" to="(250,580)"/>
-    <wire from="(250,580)" to="(330,580)"/>
-    <wire from="(260,150)" to="(260,450)"/>
-    <wire from="(260,450)" to="(330,450)"/>
-    <wire from="(270,150)" to="(270,330)"/>
-    <wire from="(270,330)" to="(330,330)"/>
-    <wire from="(280,150)" to="(280,210)"/>
-    <wire from="(280,210)" to="(330,210)"/>
-    <wire from="(310,270)" to="(310,310)"/>
-    <wire from="(310,270)" to="(570,270)"/>
-    <wire from="(310,310)" to="(330,310)"/>
-    <wire from="(310,390)" to="(310,430)"/>
-    <wire from="(310,390)" to="(570,390)"/>
-    <wire from="(310,430)" to="(330,430)"/>
-    <wire from="(320,520)" to="(320,560)"/>
-    <wire from="(320,520)" to="(570,520)"/>
-    <wire from="(320,560)" to="(330,560)"/>
-    <wire from="(550,210)" to="(590,210)"/>
-    <wire from="(550,230)" to="(570,230)"/>
-    <wire from="(550,310)" to="(600,310)"/>
-    <wire from="(550,330)" to="(570,330)"/>
-    <wire from="(550,430)" to="(610,430)"/>
-    <wire from="(550,450)" to="(570,450)"/>
-    <wire from="(550,560)" to="(620,560)"/>
-    <wire from="(550,580)" to="(630,580)"/>
-    <wire from="(570,230)" to="(570,270)"/>
-    <wire from="(570,330)" to="(570,390)"/>
-    <wire from="(570,450)" to="(570,520)"/>
-    <wire from="(590,170)" to="(590,210)"/>
-    <wire from="(590,170)" to="(660,170)"/>
-    <wire from="(600,180)" to="(600,310)"/>
-    <wire from="(600,180)" to="(660,180)"/>
-    <wire from="(610,190)" to="(610,430)"/>
-    <wire from="(610,190)" to="(660,190)"/>
-    <wire from="(620,200)" to="(620,560)"/>
-    <wire from="(620,200)" to="(660,200)"/>
-    <wire from="(630,210)" to="(630,580)"/>
-    <wire from="(630,210)" to="(660,210)"/>
+    <wire from="(200,220)" to="(200,590)"/>
+    <wire from="(200,590)" to="(340,590)"/>
+    <wire from="(210,220)" to="(210,460)"/>
+    <wire from="(210,460)" to="(340,460)"/>
+    <wire from="(220,220)" to="(220,330)"/>
+    <wire from="(220,330)" to="(340,330)"/>
+    <wire from="(230,220)" to="(230,240)"/>
+    <wire from="(230,240)" to="(320,240)"/>
+    <wire from="(250,150)" to="(250,570)"/>
+    <wire from="(250,570)" to="(340,570)"/>
+    <wire from="(260,150)" to="(260,440)"/>
+    <wire from="(260,440)" to="(340,440)"/>
+    <wire from="(270,150)" to="(270,310)"/>
+    <wire from="(270,310)" to="(340,310)"/>
+    <wire from="(280,150)" to="(280,170)"/>
+    <wire from="(280,170)" to="(340,170)"/>
+    <wire from="(310,380)" to="(310,420)"/>
+    <wire from="(310,380)" to="(590,380)"/>
+    <wire from="(310,420)" to="(340,420)"/>
+    <wire from="(320,190)" to="(320,240)"/>
+    <wire from="(320,190)" to="(340,190)"/>
+    <wire from="(320,510)" to="(320,550)"/>
+    <wire from="(320,510)" to="(600,510)"/>
+    <wire from="(320,550)" to="(340,550)"/>
+    <wire from="(330,250)" to="(330,290)"/>
+    <wire from="(330,250)" to="(580,250)"/>
+    <wire from="(330,290)" to="(340,290)"/>
+    <wire from="(560,170)" to="(660,170)"/>
+    <wire from="(560,190)" to="(580,190)"/>
+    <wire from="(560,290)" to="(620,290)"/>
+    <wire from="(560,310)" to="(590,310)"/>
+    <wire from="(560,420)" to="(630,420)"/>
+    <wire from="(560,440)" to="(600,440)"/>
+    <wire from="(560,550)" to="(640,550)"/>
+    <wire from="(560,570)" to="(650,570)"/>
+    <wire from="(580,190)" to="(580,250)"/>
+    <wire from="(590,310)" to="(590,380)"/>
+    <wire from="(600,440)" to="(600,510)"/>
+    <wire from="(620,180)" to="(620,290)"/>
+    <wire from="(620,180)" to="(660,180)"/>
+    <wire from="(630,190)" to="(630,420)"/>
+    <wire from="(630,190)" to="(660,190)"/>
+    <wire from="(640,200)" to="(640,550)"/>
+    <wire from="(640,200)" to="(660,200)"/>
+    <wire from="(650,210)" to="(650,570)"/>
+    <wire from="(650,210)" to="(660,210)"/>
     <wire from="(680,160)" to="(700,160)"/>
   </circuit>
   <circuit name="Half_Adder">
