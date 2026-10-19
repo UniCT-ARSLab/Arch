@@ -64,13 +64,13 @@
     <comp lib="0" loc="(210,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="X"/>
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="10signed"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(210,320)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Y"/>
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="10signed"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(220,320)" name="Splitter">
@@ -83,19 +83,19 @@
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="0" loc="(810,370)" name="Splitter">
+    <comp lib="0" loc="(810,360)" name="Splitter">
       <a name="appear" val="right"/>
       <a name="facing" val="west"/>
-      <a name="fanout" val="9"/>
-      <a name="incoming" val="9"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
     </comp>
     <comp lib="0" loc="(830,370)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="SOMMA"/>
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="10signed"/>
       <a name="type" val="output"/>
-      <a name="width" val="9"/>
+      <a name="width" val="8"/>
     </comp>
     <comp loc="(640,1190)" name="FULL_ADDER"/>
     <comp loc="(650,1070)" name="FULL_ADDER"/>
@@ -200,7 +200,7 @@
     <wire from="(740,350)" to="(740,1190)"/>
     <wire from="(740,350)" to="(790,350)"/>
     <wire from="(750,360)" to="(750,1210)"/>
-    <wire from="(750,360)" to="(790,360)"/>
+    <wire from="(810,360)" to="(810,370)"/>
     <wire from="(810,370)" to="(830,370)"/>
   </circuit>
   <circuit name="HALF_ADDER">
