@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="5.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v5.0.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#TTL" name="7"/>
+  <lib desc="#TCL" name="8"/>
+  <lib desc="#Base" name="9"/>
+  <lib desc="#BFH-Praktika" name="10"/>
+  <lib desc="#Input/Output-Extra" name="11"/>
+  <lib desc="#Soc" name="12"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool map="Button2" name="Poke Tool"/>
+    <tool map="Button3" name="Menu Tool"/>
+    <tool map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool name="Poke Tool"/>
+    <tool name="Edit Tool"/>
+    <tool name="Wiring Tool"/>
+    <tool name="Text Tool"/>
+    <tool name="Image"/>
+    <sep/>
+    <tool name="Pin"/>
+    <tool name="Pin">
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </tool>
+    <sep/>
+    <tool name="NOT Gate"/>
+    <tool name="AND Gate"/>
+    <tool name="OR Gate"/>
+    <tool name="XOR Gate"/>
+    <tool name="NAND Gate"/>
+    <tool name="NOR Gate"/>
+    <sep/>
+    <tool name="D Flip-Flop"/>
+    <tool name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(210,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="X1"/>
+    </comp>
+    <comp lib="0" loc="(260,240)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="X0"/>
+    </comp>
+    <comp lib="0" loc="(260,560)" name="Splitter">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(470,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Y0"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(470,320)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Y1"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(470,370)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Y2"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(470,420)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Y3"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(470,490)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(470,510)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(470,530)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(470,550)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="1" loc="(360,320)" name="AND Gate">
+      <a name="negate1" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(360,370)" name="AND Gate">
+      <a name="negate0" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(360,420)" name="AND Gate">
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(370,270)" name="AND Gate">
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="2" loc="(350,540)" name="Decoder">
+      <a name="select" val="2"/>
+    </comp>
+    <wire from="(210,240)" to="(210,280)"/>
+    <wire from="(210,280)" to="(210,330)"/>
+    <wire from="(210,280)" to="(330,280)"/>
+    <wire from="(210,330)" to="(210,380)"/>
+    <wire from="(210,330)" to="(320,330)"/>
+    <wire from="(210,380)" to="(210,430)"/>
+    <wire from="(210,380)" to="(330,380)"/>
+    <wire from="(210,430)" to="(210,540)"/>
+    <wire from="(210,430)" to="(330,430)"/>
+    <wire from="(210,540)" to="(240,540)"/>
+    <wire from="(250,520)" to="(250,540)"/>
+    <wire from="(250,520)" to="(260,520)"/>
+    <wire from="(260,240)" to="(260,260)"/>
+    <wire from="(260,260)" to="(260,310)"/>
+    <wire from="(260,260)" to="(330,260)"/>
+    <wire from="(260,310)" to="(260,360)"/>
+    <wire from="(260,310)" to="(330,310)"/>
+    <wire from="(260,360)" to="(260,410)"/>
+    <wire from="(260,360)" to="(320,360)"/>
+    <wire from="(260,410)" to="(260,520)"/>
+    <wire from="(260,410)" to="(330,410)"/>
+    <wire from="(260,560)" to="(350,560)"/>
+    <wire from="(350,540)" to="(350,560)"/>
+    <wire from="(360,320)" to="(470,320)"/>
+    <wire from="(360,370)" to="(470,370)"/>
+    <wire from="(360,420)" to="(470,420)"/>
+    <wire from="(370,270)" to="(470,270)"/>
+    <wire from="(370,500)" to="(410,500)"/>
+    <wire from="(370,510)" to="(470,510)"/>
+    <wire from="(370,520)" to="(410,520)"/>
+    <wire from="(370,530)" to="(400,530)"/>
+    <wire from="(400,530)" to="(400,550)"/>
+    <wire from="(400,550)" to="(470,550)"/>
+    <wire from="(410,490)" to="(410,500)"/>
+    <wire from="(410,490)" to="(470,490)"/>
+    <wire from="(410,520)" to="(410,530)"/>
+    <wire from="(410,530)" to="(470,530)"/>
+  </circuit>
+</project>
